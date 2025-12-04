@@ -25,11 +25,11 @@ pip install pandas numpy faiss-cpu sentence-transformers openai
 - Open the Jupyter Notebook (LSH.ipynb)
 - Ensure the dataset files train.csv, test.csv are placed in the correct directory.
 - Run all cells sequentially.
-- The script will:
-    Construct MinHash signatures for all playlists
-    Build an LSH index for efficient similarity search
-    Generate playlist continuation recommendations
-    Evaluate performance using ranking metrics (Precision@10, Recall@10, MAP@10, NDCG@10
+- The script will:  
+    Construct MinHash signatures for all playlists  
+    Build an LSH index for efficient similarity search  
+    Generate playlist continuation recommendations  
+    Evaluate performance using ranking metrics (Precision@10, Recall@10, MAP@10, NDCG@10  
 
 
 
