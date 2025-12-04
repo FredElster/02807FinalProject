@@ -9,13 +9,32 @@ Python 3.8 or newer
 ### Required Packages
 pandas
 numpy
+matplotlib
+scikit-learn
+seaborn
+scipy
+umap-learn
 faiss
 sentence_transformers
 openai
 
 
 ### Install required packages:
-pip install pandas numpy faiss-cpu sentence-transformers openai
+pip install pandas numpy faiss-cpu sentence-transformers openai matplotlib seaborn scikit-learn scipy umap-learn
+
+
+## Data processing and clustering
+- Clone or download this repository.
+- Open the Jupyter Notebook clustering.ipynb
+- Ensure the directory structure with the following files:
+  data/_raw/
+   data/                     -> 1000 MPD JSON files
+   scraped/                  -> scraped playlist dataset
+   spotify_data.csv          -> audio features (Million Songs Dataset)
+- Run all cells sequentially
+- The notebook will automatically write output files to ./data/.
+
+
 
 
 ## Locality-Sensitive Hashing for Playlist Recommendation
@@ -35,7 +54,7 @@ pip install pandas numpy faiss-cpu sentence-transformers openai
 
 ### How to run main.py (Used for Data scraping)
 - Clone or download this repository
-- Open the main.py file in visual studio code or another editor.
+- Open the main.py file in Visual Studio Code or another editor.
 - Make sure that the file is in the same folder as the .env file, with valid spotify API key information
 - Make sure the environment you are using has the right packages installed through conda or pip
 - Press run and the script will:
@@ -46,10 +65,10 @@ pip install pandas numpy faiss-cpu sentence-transformers openai
 
 ### How ot run data_splitter.py
 - Clone or download this repository
-- Open the data_splitter.py file in visual studio code or another editor
+- Open the data_splitter.py file in Visual Studio Code or another editor
 - Make sure that the file is in the same folder as the merged_with_features.csv file
 - Make sure the environment you are using has the right packages installed through conda or pip
-- Press run adn the script will:
+- Press run and the script will:
     Split the merged_with_features.csv data into a 20/80 split with 80% training and 20% test
 
 
