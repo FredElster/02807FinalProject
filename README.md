@@ -61,9 +61,9 @@ pip install pandas numpy faiss-cpu sentence-transformers openai
 - Ensure the dataset data.csv and embeddings are placed in the correct directory, as well as the llm_judge files.
 - Run all cells sequentially.
 - The script will:
-    Create or import tracks and playlist BERT embeddings
-    Build a FAISS index for fast similarity search
-    Generate a playlist based on the prompt and tracks+playlist embeddings similarity
-    Evaluate performance using ranking metrics (Precision@10, Recall@10, MAP@10, NDCG@10)
-    Evaluate performance using an LLM-as-a-judge method
+    Create or import tracks and playlist BERT embeddings  
+    Build a FAISS index for fast similarity search  
+    Generate a playlist based on the prompt and tracks+playlist embeddings similarity  
+    Evaluate performance using ranking metrics (Precision@10, Recall@10, MAP@10, NDCG@10)  
+    Evaluate performance using an LLM-as-a-judge method  
     /!\ To run the LLM-as-a-judge part, you need an OpenAI API key, which you can create here: https://platform.openai.com/api-keys, as well as **credit** on your account (gpt-4o-mini is almost, but **not**, free). If this is unfeasible, you can find the results of our run in the outputs.pdf file. 
