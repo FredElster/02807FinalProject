@@ -26,13 +26,13 @@ pip install pandas numpy faiss-cpu sentence-transformers openai matplotlib seabo
 ## Data processing and clustering
 - Clone or download this repository.
 - Open the Jupyter Notebook clustering.ipynb
-- Ensure the directory structure with the following files:
-  data/_raw/
-   data/                     -> 1000 MPD JSON files
-   scraped/                  -> scraped playlist dataset
-   spotify_data.csv          -> audio features (Million Songs Dataset)
+- Ensure the directory structure with the following files:\
+  data/_raw/\
+   data/                     -> 1000 MPD JSON files\
+   scraped/                  -> scraped playlist dataset\
+   spotify_data.csv          -> audio features (Million Songs Dataset)\
 - Run all cells sequentially
-- The notebook will automatically write output files to ./data/.
+- The notebook will automatically write output files to the ./data/ directory.
 
 
 
