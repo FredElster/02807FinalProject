@@ -22,10 +22,25 @@ openai
 ### Install required packages:
 pip install pandas numpy faiss-cpu sentence-transformers openai matplotlib seaborn scikit-learn scipy umap-learn
 
+### Required Datasets
+(when not using the provided sampled data - data/sample-merged.csv)
+
+This project requires two datasets that must be manually downloaded from Kaggle:
+
+Spotify Million Tracks\
+https://www.kaggle.com/datasets/amitanshjoshi/spotify-1million-tracks
+
+Spotify Million Playlists\
+https://www.kaggle.com/datasets/himanshuwagh/spotify-million
+
+After downloading, place the extracted files into the project’s data/_raw/ directory.
 
 ## Data processing and clustering
 - Clone or download this repository.
 - Open the Jupyter Notebook clustering.ipynb
+
+To use the existing sample data/sample-merged.csv from this repository:
+- Run all cells starting from section 1.2 in the notebook. All output files will be automatically created and read from the data/ directory.
 
 To generate a new sample and run:\
 - Ensure the directory structure with the following files:\
@@ -37,15 +52,12 @@ To generate a new sample and run:\
 - The notebook will automatically write output files to the data/ directory.
 
 
-To use the existing sample data_merged.csv from this repository:
-- Ensure the notebook is placed in the data/ directory.
-- Run all cells starting from section 1.2 in the notebook.
 
 
 /!\ Reproductibility notice\
 The pre-generated dataset combined_data.csv is the exact sampled subset used for all experiments, clustering results, and figures in the report.\
 A fixed random seed was added after the initial sampling was completed. This means that re-running the notebook from raw data may produce slightly different samples and thus somewhat different clustering values. To ensure consistent results, the notebook should be run with the pre-generated dataset.\
-All analysis, plots, and interpretations in the report are based on this provided dataset, and the full pipeline is now reproducible from this file onward.
+All analyses, plots, and interpretations in the report are based on the provided dataset, and the full pipeline is now reproducible from this file onward.
 
 
 
