@@ -110,4 +110,4 @@ All analyses, plots, and interpretations in the report are based on the provided
     Generate a playlist based on the prompt and tracks+playlist embeddings similarity  
     Evaluate performance using ranking metrics (Precision@10, Recall@10, MAP@10, NDCG@10)  
     Evaluate performance using an LLM-as-a-judge method  
-    /!\ To run the LLM-as-a-judge part, you need an OpenAI API key, which you can create here: https://platform.openai.com/api-keys, as well as **credit** on your account (gpt-4o-mini is almost, but **not**, free). If this is unfeasible, you can find the results of our run in the outputs.pdf file. 
+    /!\ To run the LLM-as-a-judge part, you need an OpenAI API key, which you can create here: https://platform.openai.com/api-keys, as well as **credit** on your account (gpt-4o-mini is almost, but **not**, free). If this is unfeasible, you can find the results of our run in the notebooks_appendix.pdf file. 
