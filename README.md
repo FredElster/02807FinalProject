@@ -7,15 +7,47 @@ Python 3.8 or newer
 
 
 ### Required Packages
-pandas
-numpy
-faiss
-sentence_transformers
-openai
+pandas  
+numpy  
+matplotlib  
+scikit-learn  
+seaborn  
+scipy  
+umap-learn  
+faiss  
+sentence_transformers  
+openai  
 
 
 ### Install required packages:
-pip install pandas numpy faiss-cpu sentence-transformers openai
+pip install pandas numpy faiss-cpu sentence-transformers openai matplotlib seaborn scikit-learn scipy umap-learn
+
+
+## Data processing and clustering
+- Clone or download this repository.
+- Open the Jupyter Notebook clustering.ipynb
+
+To generate a new sample and run:\
+- Ensure the directory structure with the following files:\
+  data/_raw/\
+   data/                     -> 1000 MPD JSON files\
+   scraped/                  -> scraped playlist dataset\
+   spotify_data.csv          -> audio features (Million Songs Dataset)\
+- Run all cells sequentially.
+- The notebook will automatically write output files to the data/ directory.
+
+
+To use the existing sample data_merged.csv from this repository:
+- Ensure the notebook is placed in the data/ directory.
+- Run all cells starting from section 1.2 in the notebook.
+
+
+/!\ Reproductibility notice\
+The pre-generated dataset combined_data.csv is the exact sampled subset used for all experiments, clustering results, and figures in the report.\
+A fixed random seed was added after the initial sampling was completed. This means that re-running the notebook from raw data may produce slightly different samples and thus somewhat different clustering values. To ensure consistent results, the notebook should be run with the pre-generated dataset.\
+All analysis, plots, and interpretations in the report are based on this provided dataset, and the full pipeline is now reproducible from this file onward.
+
+
 
 
 ## Locality-Sensitive Hashing for Playlist Recommendation
@@ -35,7 +67,7 @@ pip install pandas numpy faiss-cpu sentence-transformers openai
 
 ### How to run main.py (Used for Data scraping)
 - Clone or download this repository
-- Open the main.py file in visual studio code or another editor.
+- Open the main.py file in Visual Studio Code or another editor.
 - Make sure that the file is in the same folder as the .env file, with valid spotify API key information
 - Make sure the environment you are using has the right packages installed through conda or pip
 - Press run and the script will:
@@ -46,10 +78,10 @@ pip install pandas numpy faiss-cpu sentence-transformers openai
 
 ### How ot run data_splitter.py
 - Clone or download this repository
-- Open the data_splitter.py file in visual studio code or another editor
+- Open the data_splitter.py file in Visual Studio Code or another editor
 - Make sure that the file is in the same folder as the merged_with_features.csv file
 - Make sure the environment you are using has the right packages installed through conda or pip
-- Press run adn the script will:
+- Press run and the script will:
     Split the merged_with_features.csv data into a 20/80 split with 80% training and 20% test
 
 
