@@ -7,16 +7,16 @@ Python 3.8 or newer
 
 
 ### Required Packages
-pandas
-numpy
-matplotlib
-scikit-learn
-seaborn
-scipy
-umap-learn
-faiss
-sentence_transformers
-openai
+pandas  
+numpy  
+matplotlib  
+scikit-learn  
+seaborn  
+scipy  
+umap-learn  
+faiss  
+sentence_transformers  
+openai  
 
 
 ### Install required packages:
